@@ -1,0 +1,15 @@
+{
+  "name": "crpro-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hiiyar/crpro-graphql.git",
+  "author": "Pierre Ortega <pierreandreisortega@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src"
+  },
+  "dependencies": {
+    "apollo-server": "^2.3.1",
+    "graphql": "^14.0.2"
+  }
+}
