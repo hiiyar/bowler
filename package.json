@@ -1,15 +1,26 @@
 {
   "name": "crpro-graphql",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "git@github.com:hiiyar/crpro-graphql.git",
   "author": "Pierre Ortega <pierreandreisortega@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src"
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "build:clean": "rimraf dist",
+    "dev": "yarn build:clean & concurrently --raw \"yarn build:watch\" \"sleep 5 && nodemon dist\""
   },
   "dependencies": {
+    "@types/graphql": "^14.0.4",
     "apollo-server": "^2.3.1",
-    "graphql": "^14.0.2"
+    "graphql": "^14.0.2",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.8",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.2.2"
   }
 }
