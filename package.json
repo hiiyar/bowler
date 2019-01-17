@@ -5,11 +5,16 @@
   "repository": "git@github.com:hiiyar/crpro-graphql.git",
   "author": "Pierre Ortega <pierreandreisortega@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
     "build:clean": "rimraf dist",
-    "dev": "yarn build:clean & concurrently --raw \"yarn build:watch\" \"sleep 5 && nodemon dist\""
+    "gcp-build": "tsc -p .",
+    "dev": "yarn build:clean & concurrently --raw \"yarn build:watch\" \"sleep 5 && nodemon dist\"",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@types/graphql": "^14.0.4",

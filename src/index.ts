@@ -1,5 +1,7 @@
 import { ApolloServer, gql } from "apollo-server";
 
+const PORT = Number(process.env.PORT) || 8080;
+
 // example
 const players = [
   {
@@ -32,6 +34,6 @@ const resolvers = {
 const server = new ApolloServer({ typeDefs, resolvers });
 
 // This `listen` method launches a web-server.
-server.listen().then(({ url }) => {
+server.listen({ port: PORT }).then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
