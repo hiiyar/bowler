@@ -1,17 +1,8 @@
-// example
-const players = [
-  {
-    id: 1,
-    name: 'Me',
-  },
-  {
-    id: 2,
-    name: 'You',
-  },
-];
+import { MockList } from 'graphql-tools';
 
 export default {
   Query: {
-    players: () => players,
+    players: () => [],
+    playerByTag: () => new MockList(1),
   },
 };

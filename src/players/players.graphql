@@ -1,8 +1,13 @@
 type Player {
-  id: String
+  tag: ID
   name: String
+  trophies: Int
+
+  wins: Int
+  losses: Int
 }
 
 type Query {
   players: [Player]
+  playerByTag(tag: String): Player
 }

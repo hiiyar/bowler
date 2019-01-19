@@ -9,13 +9,14 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "prebuild": "yarn build:clean && yarn build:copyfiles",
-    "build": "tsc",
-    "build:copyfiles": "copyfiles --up 1 --all 'src/**/*.graphql' dist",
+    "copy-schemas": "cpx \"src/**/*.graphql\" dist",
+    "copy-schemas:watch": "cpx  --watch -v \"src/**/*.graphql\" dist",
+    "prebuild": "yarn build:clean && yarn copy-schemas",
+    "build": "tsc -p .",
     "build:watch": "tsc -w",
     "build:clean": "rimraf dist",
-    "gcp-build": "tsc -p .",
-    "dev": "yarn prebuild & concurrently --raw \"yarn build:watch\" \"sleep 5 && nodemon dist/main\"",
+    "gcp-build": "yarn build",
+    "dev": "yarn build:clean & concurrently --raw \"yarn copy-schemas:watch\" \"yarn build:watch\" \"sleep 5 && nodemon -e js,graphql --watch dist dist/main\"",
     "start": "node dist/main.js"
   },
   "husky": {
@@ -39,6 +40,7 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "copyfiles": "^2.1.0",
+    "cpx": "^1.5.0",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.0",
     "nodemon": "^1.18.8",
