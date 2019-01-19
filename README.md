@@ -2,7 +2,7 @@
 
 #### Public GraphQL API Interface for CRPRO.gg
 
-![Nice gif with bowler](https://i.gifer.com/9DiE.gif)
+![Nice gif with bowler](https://media.giphy.com/media/AydIvYx1YB4SA/giphy.gif)
 
 ### Development
 
