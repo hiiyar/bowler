@@ -1,6 +1,6 @@
 # Bowler
 
-## Public GraphQL API Interface for CRPRO.gg
+#### Public GraphQL API Interface for CRPRO.gg
 
 ![Nice gif with bowler](https://i.gifer.com/9DiE.gif)
 
