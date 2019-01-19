@@ -1,15 +1,15 @@
-import { ApolloServer, gql, ServerInfo } from "apollo-server";
-import { importSchema } from "graphql-import";
+import { ApolloServer, gql, ServerInfo } from 'apollo-server';
+import { importSchema } from 'graphql-import';
 
-import resolvers from "./main.resolvers";
-const typeDefs = importSchema(__dirname + "/main.graphql");
+import resolvers from './main.resolvers';
+const typeDefs = importSchema(__dirname + '/main.graphql');
 
 const server = new ApolloServer({
   typeDefs: gql`
     ${typeDefs}
   `,
   // @ts-ignore: https://github.com/apollographql/apollo-server/issues/1775
-  resolvers
+  resolvers,
 });
 
 // launch webserver

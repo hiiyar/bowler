@@ -1,3 +1,9 @@
-import playersResolvers from "./players/players.resolvers";
+import Players from './players/players.resolvers';
 
-export default [playersResolvers];
+const RootResolver = {
+  Query: {
+    health: () => 'ok',
+  },
+};
+
+export default [RootResolver, Players];

@@ -2,16 +2,16 @@
 const players = [
   {
     id: 1,
-    name: "Me"
+    name: 'Me',
   },
   {
     id: 2,
-    name: "You"
-  }
+    name: 'You',
+  },
 ];
 
 export default {
   Query: {
-    players: () => players
-  }
+    players: () => players,
+  },
 };

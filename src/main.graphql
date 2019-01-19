@@ -1,1 +1,5 @@
 # import Query.* from "./players/players.graphql"
+
+type Query {
+  health: String
+}
