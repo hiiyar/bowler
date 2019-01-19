@@ -8,7 +8,7 @@
 
 > Requirements
 >
-> - Yarn **!!**
+> - Yarn (**!**)
 > - Node ^10
 
 ```sh
