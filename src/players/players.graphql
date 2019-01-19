@@ -1,0 +1,8 @@
+type Player {
+  id: String
+  name: String
+}
+
+type Query {
+  players: [Player]
+}
