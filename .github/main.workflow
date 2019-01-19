@@ -20,7 +20,7 @@ action "Filters for GitHub Actions" {
 action "GitHub Action for Google Cloud" {
   uses = "actions/gcloud/cli@8ec8bfad3853155b42cea5eb9f8395b098111228"
   needs = ["Filters for GitHub Actions"]
-  args = "gcloud app deploy"
+  args = "app deploy"
   env = {
     PROJECT_ID = "crpro-228906"
   }
