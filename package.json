@@ -1,10 +1,10 @@
 {
-  "name": "crpro-graphql",
+  "name": "crpro-browler",
   "version": "1.0.0",
   "main": "dist/main.js",
-  "repository": "git@github.com:hiiyar/crpro-graphql.git",
+  "repository": "git@github.com:hiiyar/browler.git",
   "author": "Pierre Ortega <pierreandreisortega@gmail.com>",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "engines": {
     "node": ">=10.0.0"
   },
@@ -31,13 +31,12 @@
     ]
   },
   "dependencies": {
-    "@types/graphql": "^14.0.4",
     "apollo-server": "^2.3.1",
-    "graphql": "^14.0.2",
-    "graphql-import": "^0.7.1",
-    "typescript": "^3.2.2"
+    "graphql": "^14.0.4",
+    "graphql-import": "^0.7.1"
   },
   "devDependencies": {
+    "@types/graphql": "^14.0.5",
     "concurrently": "^4.1.0",
     "copyfiles": "^2.1.0",
     "cpx": "^1.5.0",
@@ -45,7 +44,7 @@
     "lint-staged": "^8.1.0",
     "nodemon": "^1.18.8",
     "prettier": "1.15.3",
-    "rimraf": "^2.6.2",
-    "typescript": "^3.2.2"
+    "rimraf": "^2.6.3",
+    "typescript": "^3.2.4"
   }
 }

@@ -140,10 +140,10 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
-"@types/graphql@^14.0.4":
-  version "14.0.4"
-  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-14.0.4.tgz#d71a75967cd93c33eaea32b626b362ce0f2b2ae9"
-  integrity sha512-gI98ANelzzpq7lZzuYCUJg8LZDjQc7ekj7cxoWt8RezOKaVaAyK27U6AHa9LEqikP1NUhyi8blQQkHYHVRZ7Tg==
+"@types/graphql@^14.0.5":
+  version "14.0.5"
+  resolved "https://registry.yarnpkg.com/@types/graphql/-/graphql-14.0.5.tgz#e696292fd2d77dc168b5b791710f83463aa39abd"
+  integrity sha512-bwGYLE0SRy5ZraC91dqI2bxbspfm10kyJ2Yjuvk4OjdGznh7fkoWW+xXZHfFydJaqu9syZi099cpiZw3GlPDiA==
 
 "@types/long@^4.0.0":
   version "4.0.0"
@@ -1662,10 +1662,10 @@ graphql-upload@^8.0.2:
     http-errors "^1.7.1"
     object-path "^0.11.4"
 
-graphql@^14.0.2:
-  version "14.0.2"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.0.2.tgz#7dded337a4c3fd2d075692323384034b357f5650"
-  integrity sha512-gUC4YYsaiSJT1h40krG3J+USGlwhzNTXSb4IOZljn9ag5Tj+RkoXrWp+Kh7WyE3t1NCfab5kzCuxBIvOMERMXw==
+graphql@^14.0.4:
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
+  integrity sha512-C5zDzLqvfPAgTtP8AUPIt9keDabrdRAqSWjj2OPRKrKxI9Fb65I36s1uCs1UUBFnSWTdO7hyHi7z1ZbwKMKF6Q==
   dependencies:
     iterall "^1.2.2"
 
@@ -3315,7 +3315,7 @@ retry@0.12.0:
   resolved "https://registry.yarnpkg.com/retry/-/retry-0.12.0.tgz#1b42a6266a21f07421d1b0b54b7dc167b01c013b"
   integrity sha1-G0KmJmoh8HQh0bC1S33BZ7AcATs=
 
-rimraf@^2.2.8, rimraf@^2.6.1, rimraf@^2.6.2:
+rimraf@^2.2.8, rimraf@^2.6.1, rimraf@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
@@ -3795,10 +3795,10 @@ type-is@^1.6.16, type-is@~1.6.16:
     media-typer "0.3.0"
     mime-types "~2.1.18"
 
-typescript@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.2.tgz#fe8101c46aa123f8353523ebdcf5730c2ae493e5"
-  integrity sha512-VCj5UiSyHBjwfYacmDuc/NOk4QQixbE+Wn7MFJuS0nRuPQbof132Pw4u53dm264O8LPc2MVsc7RJNml5szurkg==
+typescript@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.4.tgz#c585cb952912263d915b462726ce244ba510ef3d"
+  integrity sha512-0RNDbSdEokBeEAkgNbxJ+BLwSManFy9TeXz8uW+48j/xhEXv1ePME60olyzw2XzUqUBNAYFeJadIqAgNqIACwg==
 
 undefsafe@^2.0.2:
   version "2.0.2"
