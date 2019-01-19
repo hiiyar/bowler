@@ -1,8 +1,4 @@
-workflow "New workflow" {
-  on = "push"
-}
-
-workflow "New workflow 1" {
+workflow "Deploy to GCP" {
   on = "push"
   resolves = ["Deploy to Google App engine"]
 }
