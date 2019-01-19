@@ -22,6 +22,6 @@ action "GitHub Action for Google Cloud" {
   needs = ["Filters for GitHub Actions"]
   args = "app deploy"
   env = {
-    PROJECT_ID = "crpro-228906"
+    CLOUDSDK_CORE_PROJECT = "crpro-228906"
   }
 }
